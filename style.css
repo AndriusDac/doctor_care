@@ -1,0 +1,530 @@
+:root {
+    --main-font: "DM Sans", sans-serif;
+    --brand-green: #00856F;
+    --brand-green-light: #DCE9E2;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
+    --gray-headline: #212529;
+    --gray-paragraph: #495057;
+    --white: #FFFFFF;
+    --borfer: #EDEDED;
+    --black: #000000;
+    /* --xl: 1920px; */
+    --lg: 1366px;
+    /* --md: 960px; */
+    /* --sm: 600px; */
+    --xs: 375px;
+}
+
+/* div {
+    border: 1px solid black;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: #ddd6d6;
+    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header .container {
+    display: flex;
+    width: 100%;
+    height: 72px;
+    align-items: center;
+    max-width: var(--lg);
+    background-color: var(--brand-green-light);
+    padding: 0 125px;
+}
+
+header .container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container nav .menu {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container nav .menu ul {
+    width: 350px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container nav ul li {
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+header .container nav ul li a {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    color: var(--brand-green);
+    opacity: 70%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .container nav ul li a:hover {
+    color: var(--brand-green);
+    border-bottom: 2px solid var(--brand-green);
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 100%;
+}
+
+header .container nav .button button {
+    width: 190px;
+    height: 38px;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    color: var(--brand-green);
+    border-radius: 40px;
+    border: 1px solid var(--brand-green);
+}
+header .button button a {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--brand-green);
+}
+
+/* hero */
+
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: var(--lg);
+    height: 678px;
+    margin: auto;
+    top: -72px;
+    z-index: -1;
+    background-color: var(--brand-green-light);
+}
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 605px;
+    height: 335px;
+    margin-top: 152px;
+}
+
+
+.hero .text .text1 {
+    color: var(--brand-green);
+    width: 254px;
+    height: 21px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero .text h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 67.6px;
+    letter-spacing: 1.5px;
+    margin-top: -12px;
+}
+
+.hero .text .text2 {
+    width: 585px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: -6px;
+}
+
+.hero .text .consult-button {
+    display: flex;
+    justify-content: center;
+    width: 263px;
+    height: 52px;
+}
+
+
+.hero .text .consult-button .call-button {
+    width: 263px;
+    height: 52px;
+    border-radius: 40px;
+    border: 1p solid var(--brand-green);
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    background-color: var(--brand-green);
+}
+
+.hero .text .consult-button .call-button svg {
+    width: 20px;
+    height: 20px;
+
+}
+
+.hero .text .consult-button .call-button a {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    
+}
+.hero .text .consult-button .call-button a:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.hero .foto {
+    width: 420px;
+    height: 549;
+    margin-top: 74px;
+}
+
+.numbers {
+    position: relative;
+    width: 1120px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-beige);
+    margin: auto;
+    top: -175px;
+    border-radius: 6px;
+    border: 1px solid var(--brand-green-light)
+}
+.numbers .numbers-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 881px;
+    height: 90px;
+}
+
+.numbers .numbers-box h3 {
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+.numbers .numbers-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 24px;
+    color: var(--brand-green);
+}
+.numbers .numbers-box .line {
+    width: 83px;
+    height: 1px;
+    rotate: 90deg;
+    opacity: 50%;
+    background-color: var(--brand-green);
+    
+   
+}
+
+/* service-section */
+
+.service-section {
+    position: relative;
+    width: 1366px;
+    height: 1082px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-green-light-02);
+    top: -285px;
+    z-index: -1;
+
+}
+
+.service-section .service-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.service-section .service-t p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--brand-green);
+    padding: 20px;
+    margin-top: 150px;
+}
+
+.service-section .service-t h3 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    margin: 0 400px;
+}
+
+.service-section .service-e {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-section .service-e .service-box {
+    display: flex;
+    width: 347px;
+    height: 207px;
+    border: 1px solid var(--brand-green-light);
+    border-radius: 6px;
+    padding: 24px;
+    background-color: var(--white);
+}
+.service-section .service-e .service-box .ov {
+    width: 100%;
+    height: 157px;
+}
+
+.service-section .service-e .service-box h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.service-section .service-e .service-box p {
+    width: 100%;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    
+}
+
+/* happy doctor */
+
+.nos {
+    position: relative;
+    width: var(--lg);
+    height: 734px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-beige);
+    margin: auto;
+    top: -285px;
+    padding: 123px;
+}
+
+.nos .pic {
+    width: 480px;
+    height: 414px;
+    top: 160px;
+    border-radius: 10px;
+
+}
+
+.nos .text4 {
+    width: 573px;
+    height: 327px;
+}
+
+.nos .text4 .text4_1 {
+    width: 87px;
+    height: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 8%;
+    color: var(--brand-green);
+}
+
+.nos .text4 h2 {
+    width: 400px;
+    height: 104px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52.08px;
+    margin-top: 10px;
+
+}
+
+.nos .text4 .text4_2 {
+    width: 573px;
+    height: 168px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.em-contato {
+    position: relative;
+    width: var(--lg);
+    height: 699px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    margin: auto;
+    top: -285px;
+    padding: 123px;
+}
+
+.em-contato .info {
+    width: 404px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.em-contato .info h2 {
+    height: 104px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52.08px;
+    letter-spacing: 1.5px;
+}
+
+.em-contato .info .adres {
+    width: 186px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.em-contato .info .e-mail {
+    width: 224px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.em-contato .info .button-end {
+    display: flex;
+    justify-content: center;
+    width: 267px;
+    height: 56px;
+
+}
+
+.em-contato .info .button-end .call-button1 {
+    width: 267px;
+    height: 56px;
+    border-radius: 40px;
+    border: 1p solid var(--brand-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-green);
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+    column-gap: 20px;
+}
+
+footer {
+    position: relative;
+    width: var(--lg);
+    height: 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--brand-green);
+    margin: auto;
+    top: -285px;
+    padding: 123px;
+    color: var(--white);
+}
+
+footer .logo-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 256px;
+    height: 108px;
+}
+
+footer .logo-white .dc-logo {
+    height: 33px;
+}
+
+footer .logo-white .subtitle1 {
+    width: 138px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.23px;
+}
+
+footer .logo-white .subtitle1 {
+    width: 189px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.23px;
+}
+
+footer .soc {
+    width: 136px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+
+}
